@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/rocket_launch/baseline_rocket_launch_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/sentiment_satisfied_alt/baseline_sentiment_satisfied_alt_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +29,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="6d198b" />
-                            <entry key="outputName" value="baseline_rocket_launch_24" />
+                            <entry key="outputName" value="baseline_sentiment_satisfied_alt_24" />
                             <entry key="sourceFile" value="C:\Users\Admin\Desktop\wsei-pam-lab01" />
                           </map>
                         </option>
