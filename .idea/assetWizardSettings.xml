@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/sentiment_satisfied_alt/baseline_sentiment_satisfied_alt_24.xml" />
+                                      <entry key="url" value="jar:file:/F:/android%20studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/question_mark/baseline_question_mark_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +34,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="6d198b" />
-                            <entry key="outputName" value="baseline_sentiment_satisfied_alt_24" />
+                            <entry key="outputName" value="baseline_question_mark_24" />
                             <entry key="sourceFile" value="C:\Users\Admin\Desktop\wsei-pam-lab01" />
                           </map>
                         </option>
