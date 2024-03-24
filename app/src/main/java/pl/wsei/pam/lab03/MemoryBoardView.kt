@@ -16,6 +16,17 @@ class MemoryBoardView(
     private val tiles: MutableMap<String, Tile> = mutableMapOf()
     private val icons: List<Int> = listOf(
         R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
+        R.drawable.baseline_sentiment_satisfied_alt_24,
         // dodaj kolejne identyfikatory utworzonych ikon
     )
     init {
@@ -26,6 +37,8 @@ class MemoryBoardView(
         }
         for (i in 0 until rows) {
             for (j in 0 until cols) {
+                var iconIndex = i * cols + j;
+                val iconResourceId = shuffledIcons.getOrNull(iconIndex) ?: R.drawable.baseline_question_mark_24
                 val btn = ImageButton(gridLayout.context).also {
                     it.tag = "${i}x${j}"
                     val layoutParams = GridLayout.LayoutParams()
@@ -36,9 +49,13 @@ class MemoryBoardView(
                     layoutParams.columnSpec = GridLayout.spec(j, 1, 1f)
                     layoutParams.rowSpec = GridLayout.spec(i, 1, 1f)
                     it.layoutParams = layoutParams
-                   //mBoard.addView(it)
+                    gridLayout.addView(it)
                 }
-                val tile = Tile(btn,1,R.drawable.baseline_question_mark_24)
+                val tile = Tile(btn,iconResourceId,R.drawable.baseline_question_mark_24)
+                if(iconIndex != 0){
+                    iconIndex --;
+                }
+                shuffledIcons.remove(iconResourceId)
             }
         }
     }
